@@ -20,24 +20,7 @@ An encoder-only Transformer (~25.5M parameters) reads a melody and predicts, for
 
 Penalty weights are λ = 1/(r+ε) − 1, computed from how often each rule is satisfied in the data.
 
-## Main results (validation set, 200 epochs, last-epoch checkpoint)
-
-Joint (root and quality both correct) accuracy per note:
-
-| Variant | Joint acc. (%) |
-|---|---|
-| baseline (no rules) | 63.32 (second seed: 62.98) |
-| full (all rules) | 65.31 (65.55) |
-| full − {1,2,5} | 66.51 (66.20) |
-| full − {3,7} | 65.80 |
-| full − {6,8} | 65.87 |
-| only {1,2,5} | 65.20 |
-| only {3,7} | 66.12 |
-| only {6,8} | 64.39 |
-
-Averaged over two seeds, full vs. baseline is +2.29 pp (paired bootstrap 95% CI [+1.62, +2.96]; training-noise s ≈ 0.21 pp). Full CSVs are in `results/`, figures in `figures/`.
-
-Known limitations (discussed in thesis chapters 9–10):
+## Known limitations (discussed in thesis chapters 9–10):
 - Rule 7 overshoots: rule-trained models end on the tonic 99.6–99.9% of the time vs. 73.7% in the data.
 - Rule 3 compares chord IRIs, so targets are miscalibrated for ~13.7% of notes (CMD/POP909).
 - 8,559 POP909 notes were dropped (double sharps); CMD octaves are not shifted after transposition.
