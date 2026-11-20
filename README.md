@@ -56,7 +56,7 @@ Note: the scripts were written as Kaggle notebooks, so they run top to bottom wh
 
 ## Thesis
 
-`thesis/` contains chapters 8 (data), 9 (model, experiments, results) as Markdown and chapter 10 as LaTeX. Chapters are in Greek.
+`thesis/` contains my original Thesis. Chapters are in Greek.
 
 ## Licence
 
