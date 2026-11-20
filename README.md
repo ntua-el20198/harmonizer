@@ -1,6 +1,6 @@
 # Harmonizer: a neurosymbolic melody harmonizer
 
-Diploma thesis project, School of Electrical and Computer Engineering, National Technical University of Athens (AI and Learning Systems Lab). Supervisor: Prof. Georgios Stamou.
+Diploma thesis project, School of Electrical and Computer Engineering, National Technical University of Athens (AI and Learning Systems Lab). Supervisor: Prof. Athanasios Voulodimos.
 
 An encoder-only Transformer (~25.5M parameters) reads a melody and predicts, for every note, a chord **root** (13 classes) and **quality** (24 classes). Music-theory rules are added to the training loss as differentiable penalties computed from the softmax probabilities. The repo contains the training code, the data extractors, the ablation/evaluation code, the results and the thesis chapters.
 
