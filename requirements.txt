@@ -1,0 +1,9 @@
+torch
+x-transformers
+numpy
+music21
+matplotlib
+openpyxl
+tqdm
+torcheval
+transformers

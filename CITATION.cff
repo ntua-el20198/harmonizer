@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "Neurosymbolic melody harmonizer: rule-informed Transformer for chord prediction"
+type: software
+authors:
+  - family-names: Spyridonos
+    given-names: Konstantinos
+repository-code: "https://github.com/ntua-el20198/harmonizer"
+license: MIT
+date-released: 2026-11-20
+abstract: "Encoder-only Transformer that predicts chord root and quality for each melody note, with music-theory rules added as differentiable loss penalties. Diploma thesis, NTUA ECE, supervised by Prof. Georgios Stamou."

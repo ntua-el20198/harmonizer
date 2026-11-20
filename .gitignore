@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.pkl
+.ipynb_checkpoints/
+.DS_Store
+# large extracted data: regenerate with src/extract_*.py or host on Releases
+extracted_*.json
+final_corpus.pkl
+symbolic_lookup.pkl
+preds/
